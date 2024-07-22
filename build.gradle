@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'eclipse'
 }
 
 repositories {
@@ -8,12 +7,16 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.testng:testng:7.10.2'
-    testImplementation 'org.seleniumhq.selenium:selenium-java:4.9.0'
-    testImplementation 'org.slf4j:slf4j-simple:2.0.0'    
+    // Add the Selenium Java dependency
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.10.0' // Use the latest stable version
+    // Add the TestNG dependency
+    testImplementation 'org.testng:testng:7.8.0' // Use the latest stable version
+    testImplementation 'org.slf4j:slf4j-simple:2.0.0'
+    // Optionally add WebDriver manager dependencies if you are using WebDriverManager
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.3.2'
+
 }
 
-
 test {
-    useTestNG()
+    useTestNG() // Specify that TestNG is being used for testing
 }
