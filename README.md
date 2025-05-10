@@ -28,3 +28,10 @@ cd isstaAutomation
 
 # Run tests (example with TestNG or configured runner)
 mvn test
+
+📂 Structure
+FlightsHomePage.java – handles search input and navigation
+
+DetailFlight.java – opens flight details and proceeds to checkout
+
+FlightOrderTest.java – main end-to-end test
