@@ -1,40 +1,30 @@
-isstaAutomation
+# isstaAutomation
 
-isstaAutomation is a test automation framework developed using Java, incorporating tools like Selenium WebDriver for browser automation.
-This project aims to streamline the testing process by automating repetitive tasks, ensuring consistency, and improving efficiency.
+Automated UI test suite for verifying the flight booking flow on [issta.co.il](https://www.issta.co.il), built with Java, Selenium WebDriver, and TestNG.
 
-Features
+## ✅ Features Tested
 
-Automated browser testing using Selenium WebDriver
-Integration with ChromeDriver for executing tests on the Chrome browser
-Build management using Gradle and Maven
-Modular test structure for scalability and maintainability
+- Open Flights tab
+- Set departure (`ברלין`) and destination (`אמסטרדם`)
+- Select travel dates
+- Search available flights
+- Open flight details
+- Proceed to checkout
+- Assert checkout URL is reached
 
-Prerequisites
+## 🚀 Technologies
 
-Before setting up the project, ensure you have the following installed:
-Java Development Kit (JDK) 8 or higher
-Gradle
-Maven
-Chrome browser
-ChromeDriver compatible with your Chrome browser version
+- Java + Selenium WebDriver
+- TestNG
+- SafariDriver
+- SLF4J Logger
 
-Installation
-Clone the repository:
-  git clone https://github.com/elia1993/isstaAutomation.git
-  cd isstaAutomation
+## ▶️ Run Tests
 
-Set up ChromeDriver:
-  Ensure that the chromedriver_mac64.zip is extracted, and the chromedriver executable is placed in a directory that's included in your system's PATH.  
+```bash
+# Clone and navigate to the repo
+git clone https://github.com/elia1993/isstaAutomation.git
+cd isstaAutomation
 
-Build the project:
-  Using Gradle:
-    gradle build
-
-Using Maven:
-  mvn clean install
-  
-Usage
-To execute the automated tests:
-  Using Gradle:   gradle test
-  Using Maven:    mvn test
+# Run tests (example with TestNG or configured runner)
+mvn test
