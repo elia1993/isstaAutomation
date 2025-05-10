@@ -19,6 +19,13 @@ Automated UI test suite for verifying the flight booking flow on [issta.co.il](h
 - SafariDriver
 - SLF4J Logger
 
+📂 Structure
+FlightsHomePage.java – handles search input and navigation
+
+DetailFlight.java – opens flight details and proceeds to checkout
+
+FlightOrderTest.java – main end-to-end test
+
 ## ▶️ Run Tests
 
 ```bash
@@ -29,9 +36,4 @@ cd isstaAutomation
 # Run tests (example with TestNG or configured runner)
 mvn test
 
-📂 Structure
-FlightsHomePage.java – handles search input and navigation
 
-DetailFlight.java – opens flight details and proceeds to checkout
-
-FlightOrderTest.java – main end-to-end test
